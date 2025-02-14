@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>No Upfront Fee Loans South Africa</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     /* Global Styles */
     body, html {
@@ -28,27 +25,37 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    /* Header with WhatsApp Logo on Top Right (Nav Button) */
-    .header {
+    /* Fixed Logo on Top Right */
+    .fixed-logo {
       position: fixed;
       top: 20px;
       right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-header {
       width: 60px;
       height: 60px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png') no-repeat center;
-      background-size: cover;
       cursor: pointer;
+      z-index: 1100;
       transition: transform 0.3s ease;
     }
-    .whatsapp-header:hover {
+    .fixed-logo:hover {
       transform: scale(1.1);
+    }
+    .fixed-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Branding Section */
+    .branding {
+      margin: 100px auto 20px;
+      text-align: center;
+    }
+    .branding img {
+      max-width: 200px;
+      height: auto;
     }
     /* Hero Section */
     .hero {
-      padding: 120px 20px 80px;
+      padding: 40px 20px 80px;
       position: relative;
       z-index: 2;
     }
@@ -271,10 +278,15 @@
   </style>
 </head>
 <body>
-  <!-- Header with WhatsApp Logo as Nav Button -->
-  <div class="header">
-    <div class="whatsapp-header" onclick="window.location.href='https://v.vo';"></div>
+  <!-- Fixed Logo on Top Right that navigates to www.bv.bv -->
+  <div class="fixed-logo" onclick="window.location.href='https://www.bv.bv';">
+    <img src="https://via.placeholder.com/60?text=Logo" alt="Brand Logo" />
   </div>
+
+  <!-- Branding Section (Space for Branding Image) -->
+  <section class="branding container">
+    <img src="https://via.placeholder.com/200x100?text=Branding+Image" alt="Branding Image" />
+  </section>
 
   <!-- Hero Section -->
   <section class="hero container">
@@ -341,7 +353,7 @@
     </div>
   </section>
 
-  <!-- Testimonials Slider Section -->
+ <!-- Testimonials Slider Section -->
   <section class="testimonials container">
     <h2>What Our Clients Say</h2>
     <div class="slider">
