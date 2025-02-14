@@ -21,13 +21,14 @@
         url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
+      text-align: center;
     }
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
     }
-    /* Header with fixed WhatsApp Button (unchanged) */
+    /* Header with WhatsApp Logo on Top Right (Nav Button) */
     .header {
       position: fixed;
       top: 20px;
@@ -37,8 +38,7 @@
     .whatsapp-header {
       width: 60px;
       height: 60px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png')
-        no-repeat center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png') no-repeat center;
       background-size: cover;
       cursor: pointer;
       transition: transform 0.3s ease;
@@ -46,29 +46,11 @@
     .whatsapp-header:hover {
       transform: scale(1.1);
     }
-    /* New Navigation Bar with WhatsApp Logo as Nav Logo */
-    .navbar {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      z-index: 1100;
-    }
-    .navbar-logo img {
-      width: 50px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .navbar-logo img:hover {
-      transform: scale(1.1);
-    }
     /* Hero Section */
     .hero {
-      text-align: center;
       padding: 120px 20px 80px;
-      z-index: 2;
       position: relative;
+      z-index: 2;
     }
     .hero h1 {
       font-size: 4rem;
@@ -108,9 +90,8 @@
         transform: translateY(0);
       }
     }
-    /* Proudly South African Section (unchanged) */
+    /* Proudly South African Section */
     .proud-section {
-      text-align: center;
       padding: 40px 20px;
       background: rgba(0, 0, 0, 0.75);
       margin: 40px auto;
@@ -132,13 +113,12 @@
       border: 2px solid #fff;
       border-radius: 5px;
     }
-    /* Benefits Section (unchanged) */
+    /* Benefits & Eligibility Sections */
     .section {
       background: rgba(0, 0, 0, 0.8);
       margin: 40px 0;
       padding: 40px 20px;
       border-radius: 10px;
-      text-align: center;
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
     }
     .section h2 {
@@ -161,7 +141,6 @@
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
       position: relative;
-      text-align: center;
     }
     .benefit:hover {
       transform: translateY(-10px);
@@ -180,18 +159,19 @@
       font-size: 1rem;
       margin-bottom: 20px;
     }
-    /* "Apply here" Text & WhatsApp Icon in Each Benefit (unchanged) */
+    /* "Apply here" Link & WhatsApp Icon in Each Benefit */
     .apply-text {
       font-size: 1rem;
       color: #FFD700;
       font-weight: 600;
       margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
     }
     .whatsapp-icon {
       width: 40px;
       height: 40px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png')
-        no-repeat center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png') no-repeat center;
       background-size: cover;
       cursor: pointer;
       margin: 0 auto;
@@ -200,13 +180,12 @@
     .whatsapp-icon:hover {
       transform: scale(1.1);
     }
-    /* New Testimonials Slider Section */
+    /* Testimonials Slider Section */
     .testimonials {
       background: rgba(0, 0, 0, 0.85);
       padding: 40px 20px;
       margin: 40px 0;
       border-radius: 10px;
-      text-align: center;
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
     }
     .testimonials h2 {
@@ -259,12 +238,11 @@
     .slider-btn.next {
       right: 10px;
     }
-    /* Footer Section (unchanged) */
+    /* Footer Section */
     .footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 30px;
       background: #2E3A59;
+      padding: 30px;
+      margin-top: 40px;
     }
     .footer p {
       font-size: 1rem;
@@ -293,23 +271,16 @@
   </style>
 </head>
 <body>
-  <!-- Existing Header with WhatsApp Button (unchanged) -->
+  <!-- Header with WhatsApp Logo as Nav Button -->
   <div class="header">
-    <div class="whatsapp-header" onclick="window.location.href='https://www.bv.co';"></div>
+    <div class="whatsapp-header" onclick="window.location.href='https://v.vo';"></div>
   </div>
-
-  <!-- New Navigation Bar with WhatsApp Logo as Nav Logo -->
-  <nav class="navbar container">
-    <a href="https://www.n.com" class="navbar-logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png" />
-    </a>
-  </nav>
 
   <!-- Hero Section -->
   <section class="hero container">
     <h1>Welcome to No Upfront Fee Loans South Africa</h1>
     <p>Get the funds you need without any upfront charges – fast, secure, and reliable!</p>
-    <a href="https://www.bv.co" class="cta-button">Chat with Us on WhatsApp</a>
+    <a href="https://v.vo" class="cta-button">Chat with Us on WhatsApp</a>
   </section>
 
   <!-- Proudly South African Section -->
@@ -326,25 +297,25 @@
     <h2>Why Choose Us?</h2>
     <div class="benefits">
       <div class="benefit">
-        <img src="https://image.shutterstock.com/image-vector/fast-delivery-icon-vector-illustration-260nw-1369177582.jpg" />
+        <img src="https://image.shutterstock.com/image-vector/fast-delivery-icon-vector-illustration-260nw-1369177582.jpg" alt="Fast & Easy" />
         <h3>Fast & Easy</h3>
         <p>Apply in minutes with quick approval!</p>
-        <div class="apply-text">Apply here</div>
-        <div class="whatsapp-icon" onclick="window.location.href='https://www.bv.co';"></div>
+        <a href="https://v.vo" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://v.vo';"></div>
       </div>
       <div class="benefit">
-        <img src="https://image.shutterstock.com/image-vector/no-hidden-fees-icon-outline-vector-260nw-1551102653.jpg" />
+        <img src="https://image.shutterstock.com/image-vector/no-hidden-fees-icon-outline-vector-260nw-1551102653.jpg" alt="No Hidden Fees" />
         <h3>No Hidden Fees</h3>
         <p>Transparent fees, no surprises!</p>
-        <div class="apply-text">Apply here</div>
-        <div class="whatsapp-icon" onclick="window.location.href='https://www.bv.co';"></div>
+        <a href="https://v.vo" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://v.vo';"></div>
       </div>
       <div class="benefit">
-        <img src="https://image.shutterstock.com/image-vector/money-bag-icon-design-vector-illustration-260nw-1154362471.jpg" />
+        <img src="https://image.shutterstock.com/image-vector/money-bag-icon-design-vector-illustration-260nw-1154362471.jpg" alt="Loans" />
         <h3>Loans from R400 to R8000</h3>
         <p>Get the money you need, quickly!</p>
-        <div class="apply-text">Apply here</div>
-        <div class="whatsapp-icon" onclick="window.location.href='https://www.bv.co';"></div>
+        <a href="https://v.vo" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://v.vo';"></div>
       </div>
     </div>
   </section>
@@ -357,20 +328,20 @@
         <img src="https://image.shutterstock.com/image-vector/earning-icon-vector-illustration-260nw-1522771765.jpg" alt="Minimum Salary" />
         <h3>Minimum Salary</h3>
         <p>You must earn R5000 or more after deductions.</p>
-        <div class="apply-text">Apply here</div>
-        <div class="whatsapp-icon" onclick="window.location.href='https://www.bv.co';"></div>
+        <a href="https://v.vo" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://v.vo';"></div>
       </div>
       <div class="benefit">
         <img src="https://image.shutterstock.com/image-vector/checked-icon-vector-illustration-260nw-1702460600.jpg" alt="Debt Review" />
         <h3>Debt Review Status</h3>
         <p>No clients under debt review or blacklisted.</p>
-        <div class="apply-text">Apply here</div>
-        <div class="whatsapp-icon" onclick="window.location.href='https://www.bv.co';"></div>
+        <a href="https://v.vo" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://v.vo';"></div>
       </div>
     </div>
   </section>
 
-  <!-- New Testimonials Slider Section -->
+  <!-- Testimonials Slider Section -->
   <section class="testimonials container">
     <h2>What Our Clients Say</h2>
     <div class="slider">
@@ -382,13 +353,135 @@
           <p class="client-name">- John Doe</p>
           <p class="stars">★★★★★</p>
         </div>
-        <!-- Sample Slide 2 -->
-        <div class="slide">
-          <p class="quote">"Excellent service! I received my funds quickly without paying any upfront charges."</p>
-          <p class="client-name">- Jane Smith</p>
-          <p class="stars">★★★★★</p>
-        </div>
-        <!-- Add up to 30 unique slides as needed -->
+<!-- Sample Slide 2 -->
+<div class="slide">
+  <p class="quote">"Incredible experience! The process was quick and straightforward, and I had no upfront fees." </p>
+  <p class="client-name">- Sarah Lee</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 3 -->
+<div class="slide">
+  <p class="quote">"So easy to apply! I got the funds I needed in record time with no upfront charges." </p>
+  <p class="client-name">- Michael Brown</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 4 -->
+<div class="slide">
+  <p class="quote">"Fantastic service! The loan process was simple and fast. I will definitely recommend it." </p>
+  <p class="client-name">- Emma Williams</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 5 -->
+<div class="slide">
+  <p class="quote">"I couldn’t believe how quickly my application was processed and approved. Highly recommend!" </p>
+  <p class="client-name">- Jack Martin</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 6 -->
+<div class="slide">
+  <p class="quote">"Amazing customer support! They made sure everything was clear and easy to understand." </p>
+  <p class="client-name">- Olivia Taylor</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 7 -->
+<div class="slide">
+  <p class="quote">"I received the loan with no hassle and no upfront fees. Best experience ever!" </p>
+  <p class="client-name">- William Harris</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 8 -->
+<div class="slide">
+  <p class="quote">"Quick response and easy application process. I'm so relieved I found this service!" </p>
+  <p class="client-name">- Mia Clark</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 9 -->
+<div class="slide">
+  <p class="quote">"The best loan service I’ve ever used. No upfront costs, and the approval was so fast!" </p>
+  <p class="client-name">- James Green</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 10 -->
+<div class="slide">
+  <p class="quote">"Fast and reliable service. I had my loan in no time and no hidden charges." </p>
+  <p class="client-name">- Lucas Scott</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 11 -->
+<div class="slide">
+  <p class="quote">"I’m so grateful for the quick approval and straightforward process. No upfront fees made all the difference!" </p>
+  <p class="client-name">- Isabella King</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 12 -->
+<div class="slide">
+  <p class="quote">"Super easy process! The team was so helpful, and I received my funds fast without paying any upfront fees." </p>
+  <p class="client-name">- Ethan Lewis</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 13 -->
+<div class="slide">
+  <p class="quote">"I was able to get the funds I needed quickly and without worrying about hidden charges." </p>
+  <p class="client-name">- Chloe Walker</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 14 -->
+<div class="slide">
+  <p class="quote">"Quick and transparent! No upfront fee, and the process was much easier than I expected." </p>
+  <p class="client-name">- Liam Hall</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 15 -->
+<div class="slide">
+  <p class="quote">"So happy with my loan experience. No hidden fees, and the approval was super fast!" </p>
+  <p class="client-name">- Zoe Allen</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 16 -->
+<div class="slide">
+  <p class="quote">"The process was hassle-free, and I didn’t have to pay any upfront charges. Thanks for the help!" </p>
+  <p class="client-name">- Jacob Young</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 17 -->
+<div class="slide">
+  <p class="quote">"I never thought getting a loan could be this easy. The process was quick and efficient." </p>
+  <p class="client-name">- Emma White</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 18 -->
+<div class="slide">
+  <p class="quote">"The team was amazing! They made the process clear and fast with no upfront fees." </p>
+  <p class="client-name">- Olivia Davis</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 19 -->
+<div class="slide">
+  <p class="quote">"Excellent service, no hassle, and the approval came through quicker than I expected." </p>
+  <p class="client-name">- Ben Mitchell</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 20 -->
+<div class="slide">
+  <p class="quote">"I love how easy it was to apply and get approved without worrying about upfront fees." </p>
+  <p class="client-name">- Ava Nelson</p>
+  <p class="stars">★★★★★</p>
+</div>
       </div>
       <button class="slider-btn next">&gt;</button>
     </div>
@@ -408,16 +501,16 @@
       const nextBtn = document.querySelector('.slider-btn.next');
       let currentIndex = 0;
       const totalSlides = slideItems.length;
-
+      
       function updateSlidePosition() {
         slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
       }
-
+      
       prevBtn.addEventListener('click', function () {
         currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
         updateSlidePosition();
       });
-
+      
       nextBtn.addEventListener('click', function () {
         currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
         updateSlidePosition();
